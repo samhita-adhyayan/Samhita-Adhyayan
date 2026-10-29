@@ -6,15 +6,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>दीर्घञ्जीवितीयोऽध्यायः | Caraka Saṃhitā</title>
+<title>दीर्घञ्जीवितीयोऽध्यायः</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&display=swap" rel="stylesheet">
 
 <style>
-*{
-    box-sizing:border-box;
-}
-
 body{
     margin:0;
     padding:0;
@@ -23,26 +19,22 @@ body{
     color:#222;
 }
 
-/* Compact header matching the Aṣṭāṅga pages */
 .header{
     background:#7a001f;
     color:#f6ead0;
-    padding:16px 20px;
+    padding:20px;
     text-align:center;
 }
 
 .header h1{
     margin:0;
-    font-size:38px;
-    line-height:1.5;
+    font-size:42px;
 }
 
-/* Breadcrumb */
 .breadcrumb{
-    width:92%;
-    margin:22px auto;
+    width:90%;
+    margin:20px auto;
     font-size:16px;
-    color:#666;
 }
 
 .breadcrumb a{
@@ -51,105 +43,64 @@ body{
     font-weight:600;
 }
 
-/* Chapter heading */
 .chapter-title{
     text-align:center;
-    margin:38px 15px 35px;
+    margin-top:40px;
 }
 
 .chapter-title h2{
-    font-size:clamp(30px,4vw,42px);
+    font-size:40px;
     color:#8b0000;
-    margin:0 0 8px;
+    margin-bottom:8px;
 }
 
 .chapter-title p{
-    font-size:20px;
+    font-size:22px;
     font-style:italic;
     color:#666;
-    margin:0;
+    margin-top:0;
 }
 
-/* Verse cards */
 .verse-list{
     width:90%;
-    max-width:1400px;
-    margin:30px auto 45px;
-    display:flex;
-    flex-direction:column;
-    gap:20px;
+    margin:40px auto;
 }
 
 .verse-card{
     display:block;
-    width:100%;
-    background:white;
-    border:2px solid #d2b98b;
-    border-radius:14px;
-    padding:24px 20px;
-    text-align:center;
     text-decoration:none;
     color:#222;
-    cursor:pointer;
+    background:white;
+    border:2px solid #d2b98b;
+    border-radius:12px;
+    padding:20px;
+    margin-bottom:20px;
     transition:0.2s;
+    text-align:center;
 }
 
 .verse-card:hover{
     background:#fcf8f2;
-    border-color:#b89255;
     transform:translateY(-2px);
-    box-shadow:0 6px 16px rgba(0,0,0,0.07);
-}
-
-.verse-number{
-    color:#8b0000;
-    font-size:16px;
-    font-weight:600;
-    margin-bottom:12px;
 }
 
 .verse-text{
-    font-size:clamp(21px,2.2vw,27px);
+    font-size:24px;
     line-height:1.9;
-    font-weight:400;
-}
-
-.verse-type{
-    color:#888;
-    font-size:13px;
-    margin-top:10px;
-}
-
-/* Back navigation */
-.back-link{
-    display:block;
-    width:max-content;
-    max-width:90%;
-    margin:35px auto 45px;
-    padding:11px 22px;
-    border:2px solid #d2b98b;
-    border-radius:10px;
-    background:white;
-    color:#8b0000;
-    text-decoration:none;
     text-align:center;
-}
-
-.back-link:hover{
-    background:#fcf8f2;
 }
 
 @media(max-width:600px){
     .header h1{
+        font-size:32px;
+    }
+
+    .chapter-title h2{
         font-size:30px;
     }
 
-    .verse-list{
-        width:92%;
-    }
-
-    .verse-card{
-        padding:22px 14px;
+    .verse-text{
+        font-size:21px;
     }
 }
 </style>
@@ -163,9 +114,9 @@ body{
 
 <div class="breadcrumb">
     <a href="index.html">चरकसंहिता</a>
-    &nbsp;→&nbsp;
+    →
     <a href="sutrasthana.html">सूत्रस्थानम्</a>
-    &nbsp;→&nbsp;
+    →
     दीर्घञ्जीवितीयोऽध्यायः
 </div>
 
@@ -177,42 +128,26 @@ body{
 <div class="verse-list">
 
     <a class="verse-card" href="verse-01.html">
-        <div class="verse-number">१</div>
-
         <div class="verse-text">
             अथातो दीर्घञ्जीवितीयमध्यायं व्याख्यास्यामः ॥१॥
         </div>
-
-        <div class="verse-type">गद्यम्</div>
     </a>
 
     <a class="verse-card" href="verse-02.html">
-        <div class="verse-number">२</div>
-
         <div class="verse-text">
             इति ह स्माह भगवानात्रेयः ॥२॥
         </div>
-
-        <div class="verse-type">गद्यम्</div>
     </a>
 
     <a class="verse-card" href="verse-03.html">
-        <div class="verse-number">३</div>
-
         <div class="verse-text">
             दीर्घं जीवितमन्विच्छन् भरद्वाज उपागमत् ।
             <br>
             इन्द्रमुग्रतपा बुद्ध्वा शरण्यममरेश्वरम् ॥३॥
         </div>
-
-        <div class="verse-type">अनुष्टुप्</div>
     </a>
 
 </div>
-
-<a class="back-link" href="sutrasthana.html">
-    ← सूत्रस्थानम्
-</a>
 
 </body>
 </html>
