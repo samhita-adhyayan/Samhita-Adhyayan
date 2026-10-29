@@ -1,7 +1,7 @@
 document.getElementById("charaka-card")
 .addEventListener("click", function(){
 
-alert("Caraka-Saṃhitā section coming soon");
+window.location.href = "caraka/index.html";
 
 });
 
