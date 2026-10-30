@@ -406,17 +406,14 @@ function showGrammar(word){
         );
     });
 
-    document.getElementById("grammarTitle").textContent = word;
-
     let html = `
         <div class="analysis-section">
-            <h4>पदपरिचयः</h4>
+            <h4 style="text-align:center;">पदपरिचयः</h4>
             <p><strong>पदप्रकारः:</strong> ${data.type}</p>
             <p><strong>मूलप्रातिपदिकम् / धातुः:</strong> ${data.base}</p>
             <p><strong>विवरणम्:</strong> ${data.details}</p>
             <p><strong>अर्थः:</strong> ${data.meaning}</p>
         </div>
-            <p>${data.commentary}</p>
         </div>
     `;
 
